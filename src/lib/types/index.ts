@@ -1,54 +1,62 @@
-export type CarType = 'SUV' | 'Sedan' | 'Hatchback' | 'Coupe';
+export type BodyType = 'sedan' | 'suv' | 'hatchback' | 'coupe';
 
-export type Drivetrain = 'AWD' | 'RWD' | 'FWD';
+export type DriveType = 'AWD' | 'RWD' | 'FWD';
+
+export type ColorType = 'black' | 'white' | 'green' | 'blue' | 'silver';
 
 export interface CarVersion {
-	id: string;
-	name: string;
-	power: string; // np. "300 KM"
-	range: string; // np. "450 km"
-	acceleration: string; // np. "5.5s"
-	priceModifier: number;
+  name: string;
+  priceModifier: number;
+  features: string[];
 }
 
-export interface CarColor {
-	id: string;
-	name: string;
-	hex: string;
-	priceModifier: number;
+export interface CarAddon {
+  id: string;
+  name: string;
+  price: number;
+  category: 'winter' | 'accessories';
 }
 
-export interface CarExtra {
-	id: string;
-	name: string;
-	description: string;
-	price: number;
+export interface CarSpecs {
+  acceleration: string;
+  topSpeed: string;
+  charging: string;
+  batteryCapacity: string;
+  warranty: string;
 }
 
 export interface Car {
-	id: string;
-	name: string;
-	type: CarType;
-	drivetrain: Drivetrain;
-	basePrice: number;
-	mainImage: string;
-	galleryImages: string[];
-	versions: CarVersion[];
-	colors: CarColor[];
-	extras: CarExtra[];
+  id: string;
+  name: string;
+  model: string;
+  basePrice: number;
+  type: BodyType;
+  drive: DriveType;
+  range: number;
+  images: {
+    main: string;
+    thumbnail: string;
+    gallery: string[];
+  };
+  versions: CarVersion[];
+  colors: ColorType[];
+  addons: CarAddon[];
+  specs: CarSpecs;
 }
 
-export interface CarFilters {
-	type: CarType | null;
-	drivetrain: Drivetrain | null;
-	priceMax: number | null;
+export interface FilterState {
+  type: BodyType | null;
+  drive: DriveType | null;
+  minPrice: number;
+  maxPrice: number;
 }
 
 export interface CarConfiguration {
-	carId: string;
-	versionId: string;
-	colorId: string;
-	extraIds: string[];
-	totalPrice: number;
-	configuredAt: string;
+  carId: string;
+  carName: string;
+  version: string;
+  color: ColorType;
+  addons: string[];
+  totalPrice: number;
+  timestamp: string;
 }

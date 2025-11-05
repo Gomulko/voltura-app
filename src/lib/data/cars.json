@@ -1,296 +1,488 @@
 [
-	{
-		"id": "voltura-x1",
-		"name": "Voltura X1",
-		"type": "SUV",
-		"drivetrain": "AWD",
-		"basePrice": 180000,
-		"mainImage": "/images/voltura-x1-main.jpg",
-		"galleryImages": [
-			"/images/voltura-x1-1.jpg",
-			"/images/voltura-x1-2.jpg",
-			"/images/voltura-x1-3.jpg",
-			"/images/voltura-x1-4.jpg"
-		],
-		"versions": [
-			{
-				"id": "x1-standard",
-				"name": "Standard",
-				"power": "300 KM",
-				"range": "450 km",
-				"acceleration": "6.5s",
-				"priceModifier": 0
-			},
-			{
-				"id": "x1-performance",
-				"name": "Performance",
-				"power": "450 KM",
-				"range": "400 km",
-				"acceleration": "4.2s",
-				"priceModifier": 35000
-			},
-			{
-				"id": "x1-long-range",
-				"name": "Long Range",
-				"power": "350 KM",
-				"range": "600 km",
-				"acceleration": "5.8s",
-				"priceModifier": 25000
-			}
-		],
-		"colors": [
-			{
-				"id": "white",
-				"name": "Biała perła",
-				"hex": "#F8F8F8",
-				"priceModifier": 0
-			},
-			{
-				"id": "black",
-				"name": "Czarny metalik",
-				"hex": "#1A1A1A",
-				"priceModifier": 3000
-			},
-			{
-				"id": "blue",
-				"name": "Niebieski ocean",
-				"hex": "#2C5F8D",
-				"priceModifier": 5000
-			},
-			{
-				"id": "red",
-				"name": "Czerwony racing",
-				"hex": "#C1272D",
-				"priceModifier": 5000
-			}
-		],
-		"extras": [
-			{
-				"id": "autopilot",
-				"name": "Autopilot Pro",
-				"description": "Zaawansowany system autonomicznej jazdy",
-				"price": 15000
-			},
-			{
-				"id": "premium-audio",
-				"name": "Premium Audio",
-				"description": "System audio 15 głośników",
-				"price": 8000
-			},
-			{
-				"id": "panoramic-roof",
-				"name": "Dach panoramiczny",
-				"description": "Elektrycznie sterowany szklany dach",
-				"price": 6000
-			}
-		]
-	},
-	{
-		"id": "voltura-s3",
-		"name": "Voltura S3",
-		"type": "Sedan",
-		"drivetrain": "RWD",
-		"basePrice": 145000,
-		"mainImage": "/images/voltura-s3-main.jpg",
-		"galleryImages": [
-			"/images/voltura-s3-1.jpg",
-			"/images/voltura-s3-2.jpg",
-			"/images/voltura-s3-3.jpg"
-		],
-		"versions": [
-			{
-				"id": "s3-standard",
-				"name": "Standard",
-				"power": "250 KM",
-				"range": "480 km",
-				"acceleration": "7.2s",
-				"priceModifier": 0
-			},
-			{
-				"id": "s3-plus",
-				"name": "Plus",
-				"power": "350 KM",
-				"range": "520 km",
-				"acceleration": "5.5s",
-				"priceModifier": 22000
-			}
-		],
-		"colors": [
-			{
-				"id": "white",
-				"name": "Biała perła",
-				"hex": "#F8F8F8",
-				"priceModifier": 0
-			},
-			{
-				"id": "silver",
-				"name": "Srebrny metalik",
-				"hex": "#C0C0C0",
-				"priceModifier": 3000
-			},
-			{
-				"id": "graphite",
-				"name": "Grafit",
-				"hex": "#4A4A4A",
-				"priceModifier": 4000
-			}
-		],
-		"extras": [
-			{
-				"id": "autopilot",
-				"name": "Autopilot Pro",
-				"description": "Zaawansowany system autonomicznej jazdy",
-				"price": 15000
-			},
-			{
-				"id": "sport-package",
-				"name": "Pakiet Sport",
-				"description": "Sportowe zawieszenie i felgi 20\"",
-				"price": 12000
-			},
-			{
-				"id": "comfort-seats",
-				"name": "Fotele komfortowe",
-				"description": "Wentylowane i masujące fotele skórzane",
-				"price": 9000
-			}
-		]
-	},
-	{
-		"id": "voltura-h5",
-		"name": "Voltura H5",
-		"type": "Hatchback",
-		"drivetrain": "FWD",
-		"basePrice": 95000,
-		"mainImage": "/images/voltura-h5-main.jpg",
-		"galleryImages": [
-			"/images/voltura-h5-1.jpg",
-			"/images/voltura-h5-2.jpg",
-			"/images/voltura-h5-3.jpg"
-		],
-		"versions": [
-			{
-				"id": "h5-base",
-				"name": "Base",
-				"power": "180 KM",
-				"range": "380 km",
-				"acceleration": "8.5s",
-				"priceModifier": 0
-			},
-			{
-				"id": "h5-sport",
-				"name": "Sport",
-				"power": "220 KM",
-				"range": "350 km",
-				"acceleration": "7.1s",
-				"priceModifier": 15000
-			}
-		],
-		"colors": [
-			{
-				"id": "white",
-				"name": "Biała perła",
-				"hex": "#F8F8F8",
-				"priceModifier": 0
-			},
-			{
-				"id": "yellow",
-				"name": "Żółty electric",
-				"hex": "#FFD700",
-				"priceModifier": 4000
-			},
-			{
-				"id": "green",
-				"name": "Zielony mint",
-				"hex": "#98D8C8",
-				"priceModifier": 4000
-			}
-		],
-		"extras": [
-			{
-				"id": "tech-package",
-				"name": "Pakiet Tech",
-				"description": "Wyświetlacz HUD i kamera 360°",
-				"price": 7000
-			},
-			{
-				"id": "winter-package",
-				"name": "Pakiet zimowy",
-				"description": "Podgrzewane fotele i kierownica",
-				"price": 4000
-			}
-		]
-	},
-	{
-		"id": "voltura-c9",
-		"name": "Voltura C9",
-		"type": "Coupe",
-		"drivetrain": "RWD",
-		"basePrice": 220000,
-		"mainImage": "/images/voltura-c9-main.jpg",
-		"galleryImages": [
-			"/images/voltura-c9-1.jpg",
-			"/images/voltura-c9-2.jpg",
-			"/images/voltura-c9-3.jpg",
-			"/images/voltura-c9-4.jpg"
-		],
-		"versions": [
-			{
-				"id": "c9-gt",
-				"name": "GT",
-				"power": "500 KM",
-				"range": "420 km",
-				"acceleration": "3.8s",
-				"priceModifier": 0
-			},
-			{
-				"id": "c9-ultra",
-				"name": "Ultra",
-				"power": "650 KM",
-				"range": "380 km",
-				"acceleration": "2.9s",
-				"priceModifier": 45000
-			}
-		],
-		"colors": [
-			{
-				"id": "black",
-				"name": "Czarny metalik",
-				"hex": "#1A1A1A",
-				"priceModifier": 3000
-			},
-			{
-				"id": "red",
-				"name": "Czerwony racing",
-				"hex": "#C1272D",
-				"priceModifier": 5000
-			},
-			{
-				"id": "midnight-blue",
-				"name": "Niebieski midnight",
-				"hex": "#191970",
-				"priceModifier": 6000
-			}
-		],
-		"extras": [
-			{
-				"id": "carbon-package",
-				"name": "Pakiet Carbon",
-				"description": "Elementy z włókna węglowego",
-				"price": 18000
-			},
-			{
-				"id": "track-mode",
-				"name": "Tryb Track",
-				"description": "Zaawansowany system torowy",
-				"price": 12000
-			},
-			{
-				"id": "premium-audio",
-				"name": "Premium Audio",
-				"description": "System audio 15 głośników",
-				"price": 8000
-			}
-		]
-	}
+  {
+    "id": "voltura-zx-2025",
+    "name": "Voltura ZX",
+    "model": "ZX 2025",
+    "basePrice": 100999,
+    "type": "sedan",
+    "drive": "AWD",
+    "range": 400,
+    "images": {
+      "main": "https://placehold.co/800x600/1a4d3e/white?text=Voltura+ZX",
+      "thumbnail": "https://placehold.co/400x300/1a4d3e/white?text=Voltura+ZX",
+      "gallery": [
+        "https://placehold.co/800x600/1a4d3e/white?text=Voltura+ZX+Front",
+        "https://placehold.co/800x600/1a4d3e/white?text=Voltura+ZX+Side",
+        "https://placehold.co/800x600/1a4d3e/white?text=Voltura+ZX+Interior"
+      ]
+    },
+    "versions": [
+      {
+        "name": "Podstawowa",
+        "priceModifier": 0,
+        "features": ["Tempomat", "Klimatyzacja", "LED Reflektory"]
+      },
+      {
+        "name": "Sport",
+        "priceModifier": 15000,
+        "features": ["Tempomat", "Klimatyzacja", "LED Reflektory", "Sportowe zawieszenie", "Pakiet sportowy"]
+      },
+      {
+        "name": "Performance",
+        "priceModifier": 30000,
+        "features": ["Tempomat", "Klimatyzacja", "LED Reflektory", "Sportowe zawieszenie", "Pakiet sportowy", "Autopilot", "Premium Audio"]
+      }
+    ],
+    "colors": ["black", "white", "green", "blue", "silver"],
+    "addons": [
+      {
+        "id": "winter-tires",
+        "name": "Koła zimowe",
+        "price": 3000,
+        "category": "winter"
+      },
+      {
+        "id": "floor-mats",
+        "name": "Dywaniki",
+        "price": 500,
+        "category": "accessories"
+      },
+      {
+        "id": "roof-rack",
+        "name": "Bagażnik dachowy",
+        "price": 2000,
+        "category": "accessories"
+      },
+      {
+        "id": "bike-rack",
+        "name": "Uchwyty na rowery",
+        "price": 1500,
+        "category": "accessories"
+      },
+      {
+        "id": "child-seat",
+        "name": "Fotelik dziecięcy",
+        "price": 1200,
+        "category": "accessories"
+      },
+      {
+        "id": "navigation",
+        "name": "System nawigacji",
+        "price": 4000,
+        "category": "accessories"
+      }
+    ],
+    "specs": {
+      "acceleration": "5.8s",
+      "topSpeed": "210 km/h",
+      "charging": "30 min (10-80%)",
+      "batteryCapacity": "75 kWh",
+      "warranty": "5 lat / 150 000 km"
+    }
+  },
+  {
+    "id": "voltura-px-2025",
+    "name": "Voltura PX",
+    "model": "PX 2025",
+    "basePrice": 120999,
+    "type": "suv",
+    "drive": "AWD",
+    "range": 500,
+    "images": {
+      "main": "https://placehold.co/800x600/1a4d3e/white?text=Voltura+PX",
+      "thumbnail": "https://placehold.co/400x300/1a4d3e/white?text=Voltura+PX",
+      "gallery": [
+        "https://placehold.co/800x600/1a4d3e/white?text=Voltura+PX+Front",
+        "https://placehold.co/800x600/1a4d3e/white?text=Voltura+PX+Side",
+        "https://placehold.co/800x600/1a4d3e/white?text=Voltura+PX+Interior"
+      ]
+    },
+    "versions": [
+      {
+        "name": "Podstawowa",
+        "priceModifier": 0,
+        "features": ["Tempomat adaptacyjny", "Dual-zone AC", "Panoramiczny dach"]
+      },
+      {
+        "name": "Sport",
+        "priceModifier": 15000,
+        "features": ["Tempomat adaptacyjny", "Dual-zone AC", "Panoramiczny dach", "Sportowe siedzenia", "Felgi 21\""]
+      },
+      {
+        "name": "Performance",
+        "priceModifier": 30000,
+        "features": ["Tempomat adaptacyjny", "Dual-zone AC", "Panoramiczny dach", "Sportowe siedzenia", "Felgi 21\"", "System nawigacji premium", "Kamera 360°"]
+      }
+    ],
+    "colors": ["black", "white", "green", "blue", "silver"],
+    "addons": [
+      {
+        "id": "winter-tires",
+        "name": "Koła zimowe",
+        "price": 3000,
+        "category": "winter"
+      },
+      {
+        "id": "floor-mats",
+        "name": "Dywaniki",
+        "price": 500,
+        "category": "accessories"
+      },
+      {
+        "id": "roof-rack",
+        "name": "Bagażnik dachowy",
+        "price": 2000,
+        "category": "accessories"
+      },
+      {
+        "id": "bike-rack",
+        "name": "Uchwyty na rowery",
+        "price": 1500,
+        "category": "accessories"
+      },
+      {
+        "id": "child-seat",
+        "name": "Fotelik dziecięcy",
+        "price": 1200,
+        "category": "accessories"
+      },
+      {
+        "id": "navigation",
+        "name": "System nawigacji",
+        "price": 4000,
+        "category": "accessories"
+      }
+    ],
+    "specs": {
+      "acceleration": "5.2s",
+      "topSpeed": "220 km/h",
+      "charging": "28 min (10-80%)",
+      "batteryCapacity": "95 kWh",
+      "warranty": "5 lat / 150 000 km"
+    }
+  },
+  {
+    "id": "voltura-sx-2025",
+    "name": "Voltura SX",
+    "model": "SX 2025",
+    "basePrice": 99999,
+    "type": "suv",
+    "drive": "AWD",
+    "range": 300,
+    "images": {
+      "main": "https://placehold.co/800x600/1a4d3e/white?text=Voltura+SX",
+      "thumbnail": "https://placehold.co/400x300/1a4d3e/white?text=Voltura+SX",
+      "gallery": [
+        "https://placehold.co/800x600/1a4d3e/white?text=Voltura+SX+Front",
+        "https://placehold.co/800x600/1a4d3e/white?text=Voltura+SX+Side",
+        "https://placehold.co/800x600/1a4d3e/white?text=Voltura+SX+Interior"
+      ]
+    },
+    "versions": [
+      {
+        "name": "Podstawowa",
+        "priceModifier": 0,
+        "features": ["Kamera cofania", "Czujniki parkowania", "Bluetooth"]
+      },
+      {
+        "name": "Sport",
+        "priceModifier": 15000,
+        "features": ["Kamera cofania", "Czujniki parkowania", "Bluetooth", "Skórzana tapicerka", "Podgrzewane siedzenia"]
+      },
+      {
+        "name": "Performance",
+        "priceModifier": 30000,
+        "features": ["Kamera cofania", "Czujniki parkowania", "Bluetooth", "Skórzana tapicerka", "Podgrzewane siedzenia", "System audio premium", "Asystent pasa ruchu"]
+      }
+    ],
+    "colors": ["black", "white", "green", "blue", "silver"],
+    "addons": [
+      {
+        "id": "winter-tires",
+        "name": "Koła zimowe",
+        "price": 3000,
+        "category": "winter"
+      },
+      {
+        "id": "floor-mats",
+        "name": "Dywaniki",
+        "price": 500,
+        "category": "accessories"
+      },
+      {
+        "id": "roof-rack",
+        "name": "Bagażnik dachowy",
+        "price": 2000,
+        "category": "accessories"
+      },
+      {
+        "id": "bike-rack",
+        "name": "Uchwyty na rowery",
+        "price": 1500,
+        "category": "accessories"
+      },
+      {
+        "id": "child-seat",
+        "name": "Fotelik dziecięcy",
+        "price": 1200,
+        "category": "accessories"
+      },
+      {
+        "id": "navigation",
+        "name": "System nawigacji",
+        "price": 4000,
+        "category": "accessories"
+      }
+    ],
+    "specs": {
+      "acceleration": "6.5s",
+      "topSpeed": "190 km/h",
+      "charging": "35 min (10-80%)",
+      "batteryCapacity": "60 kWh",
+      "warranty": "5 lat / 150 000 km"
+    }
+  },
+  {
+    "id": "voltura-eline-2025",
+    "name": "Voltura E-Line",
+    "model": "E-Line 2025",
+    "basePrice": 110999,
+    "type": "sedan",
+    "drive": "RWD",
+    "range": 450,
+    "images": {
+      "main": "https://placehold.co/800x600/1a4d3e/white?text=Voltura+E-Line",
+      "thumbnail": "https://placehold.co/400x300/1a4d3e/white?text=Voltura+E-Line",
+      "gallery": [
+        "https://placehold.co/800x600/1a4d3e/white?text=Voltura+E-Line+Front",
+        "https://placehold.co/800x600/1a4d3e/white?text=Voltura+E-Line+Side",
+        "https://placehold.co/800x600/1a4d3e/white?text=Voltura+E-Line+Interior"
+      ]
+    },
+    "versions": [
+      {
+        "name": "Podstawowa",
+        "priceModifier": 0,
+        "features": ["Automatyczna klimatyzacja", "System multimedialny", "Reflektory LED"]
+      },
+      {
+        "name": "Sport",
+        "priceModifier": 15000,
+        "features": ["Automatyczna klimatyzacja", "System multimedialny", "Reflektory LED", "Sportowy pakiet stylistyczny", "Felgi 19\""]
+      },
+      {
+        "name": "Performance",
+        "priceModifier": 30000,
+        "features": ["Automatyczna klimatyzacja", "System multimedialny", "Reflektory LED", "Sportowy pakiet stylistyczny", "Felgi 19\"", "Pakiet assistance", "HUD"]
+      }
+    ],
+    "colors": ["black", "white", "green", "blue", "silver"],
+    "addons": [
+      {
+        "id": "winter-tires",
+        "name": "Koła zimowe",
+        "price": 3000,
+        "category": "winter"
+      },
+      {
+        "id": "floor-mats",
+        "name": "Dywaniki",
+        "price": 500,
+        "category": "accessories"
+      },
+      {
+        "id": "roof-rack",
+        "name": "Bagażnik dachowy",
+        "price": 2000,
+        "category": "accessories"
+      },
+      {
+        "id": "bike-rack",
+        "name": "Uchwyty na rowery",
+        "price": 1500,
+        "category": "accessories"
+      },
+      {
+        "id": "child-seat",
+        "name": "Fotelik dziecięcy",
+        "price": 1200,
+        "category": "accessories"
+      },
+      {
+        "id": "navigation",
+        "name": "System nawigacji",
+        "price": 4000,
+        "category": "accessories"
+      }
+    ],
+    "specs": {
+      "acceleration": "5.5s",
+      "topSpeed": "215 km/h",
+      "charging": "32 min (10-80%)",
+      "batteryCapacity": "82 kWh",
+      "warranty": "5 lat / 150 000 km"
+    }
+  },
+  {
+    "id": "voltura-sport-2025",
+    "name": "Voltura Sport",
+    "model": "Sport 2025",
+    "basePrice": 150999,
+    "type": "coupe",
+    "drive": "AWD",
+    "range": 350,
+    "images": {
+      "main": "https://placehold.co/800x600/1a4d3e/white?text=Voltura+Sport",
+      "thumbnail": "https://placehold.co/400x300/1a4d3e/white?text=Voltura+Sport",
+      "gallery": [
+        "https://placehold.co/800x600/1a4d3e/white?text=Voltura+Sport+Front",
+        "https://placehold.co/800x600/1a4d3e/white?text=Voltura+Sport+Side",
+        "https://placehold.co/800x600/1a4d3e/white?text=Voltura+Sport+Interior"
+      ]
+    },
+    "versions": [
+      {
+        "name": "Podstawowa",
+        "priceModifier": 0,
+        "features": ["Sportowe zawieszenie", "Sportowe siedzenia", "Tryb Sport"]
+      },
+      {
+        "name": "Sport",
+        "priceModifier": 15000,
+        "features": ["Sportowe zawieszenie", "Sportowe siedzenia", "Tryb Sport", "Pakiet Carbon", "Hamulce ceramiczne"]
+      },
+      {
+        "name": "Performance",
+        "priceModifier": 30000,
+        "features": ["Sportowe zawieszenie", "Sportowe siedzenia", "Tryb Sport", "Pakiet Carbon", "Hamulce ceramiczne", "Tryb Track", "Launch Control"]
+      }
+    ],
+    "colors": ["black", "white", "green", "blue", "silver"],
+    "addons": [
+      {
+        "id": "winter-tires",
+        "name": "Koła zimowe",
+        "price": 3000,
+        "category": "winter"
+      },
+      {
+        "id": "floor-mats",
+        "name": "Dywaniki",
+        "price": 500,
+        "category": "accessories"
+      },
+      {
+        "id": "roof-rack",
+        "name": "Bagażnik dachowy",
+        "price": 2000,
+        "category": "accessories"
+      },
+      {
+        "id": "bike-rack",
+        "name": "Uchwyty na rowery",
+        "price": 1500,
+        "category": "accessories"
+      },
+      {
+        "id": "child-seat",
+        "name": "Fotelik dziecięcy",
+        "price": 1200,
+        "category": "accessories"
+      },
+      {
+        "id": "navigation",
+        "name": "System nawigacji",
+        "price": 4000,
+        "category": "accessories"
+      }
+    ],
+    "specs": {
+      "acceleration": "3.9s",
+      "topSpeed": "250 km/h",
+      "charging": "25 min (10-80%)",
+      "batteryCapacity": "85 kWh",
+      "warranty": "5 lat / 150 000 km"
+    }
+  },
+  {
+    "id": "voltura-city-2025",
+    "name": "Voltura City",
+    "model": "City 2025",
+    "basePrice": 85999,
+    "type": "hatchback",
+    "drive": "FWD",
+    "range": 280,
+    "images": {
+      "main": "https://placehold.co/800x600/1a4d3e/white?text=Voltura+City",
+      "thumbnail": "https://placehold.co/400x300/1a4d3e/white?text=Voltura+City",
+      "gallery": [
+        "https://placehold.co/800x600/1a4d3e/white?text=Voltura+City+Front",
+        "https://placehold.co/800x600/1a4d3e/white?text=Voltura+City+Side",
+        "https://placehold.co/800x600/1a4d3e/white?text=Voltura+City+Interior"
+      ]
+    },
+    "versions": [
+      {
+        "name": "Podstawowa",
+        "priceModifier": 0,
+        "features": ["Klimatyzacja manualna", "Radio", "Elektryczne szyby"]
+      },
+      {
+        "name": "Sport",
+        "priceModifier": 15000,
+        "features": ["Klimatyzacja manualna", "Radio", "Elektryczne szyby", "Automatyczna klimatyzacja", "Czujniki parkowania"]
+      },
+      {
+        "name": "Performance",
+        "priceModifier": 30000,
+        "features": ["Klimatyzacja manualna", "Radio", "Elektryczne szyby", "Automatyczna klimatyzacja", "Czujniki parkowania", "Kamera cofania", "CarPlay/Android Auto"]
+      }
+    ],
+    "colors": ["black", "white", "green", "blue", "silver"],
+    "addons": [
+      {
+        "id": "winter-tires",
+        "name": "Koła zimowe",
+        "price": 3000,
+        "category": "winter"
+      },
+      {
+        "id": "floor-mats",
+        "name": "Dywaniki",
+        "price": 500,
+        "category": "accessories"
+      },
+      {
+        "id": "roof-rack",
+        "name": "Bagażnik dachowy",
+        "price": 2000,
+        "category": "accessories"
+      },
+      {
+        "id": "bike-rack",
+        "name": "Uchwyty na rowery",
+        "price": 1500,
+        "category": "accessories"
+      },
+      {
+        "id": "child-seat",
+        "name": "Fotelik dziecięcy",
+        "price": 1200,
+        "category": "accessories"
+      },
+      {
+        "id": "navigation",
+        "name": "System nawigacji",
+        "price": 4000,
+        "category": "accessories"
+      }
+    ],
+    "specs": {
+      "acceleration": "8.2s",
+      "topSpeed": "170 km/h",
+      "charging": "40 min (10-80%)",
+      "batteryCapacity": "50 kWh",
+      "warranty": "5 lat / 150 000 km"
+    }
+  }
 ]
