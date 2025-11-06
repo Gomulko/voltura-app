@@ -11,17 +11,30 @@
 
 	let localMin = $state(min);
 	let localMax = $state(max);
+	let debounceTimeout: ReturnType<typeof setTimeout> | null = null;
+
+	$effect(() => {
+		localMin = min;
+		localMax = max;
+	});
+
+	function debounce(callback: () => void, delay: number): void {
+		if (debounceTimeout) {
+			clearTimeout(debounceTimeout);
+		}
+		debounceTimeout = setTimeout(callback, delay);
+	}
 
 	function handleMinChange(event: Event): void {
 		const target = event.target as HTMLInputElement;
 		localMin = Number(target.value);
-		onchange(localMin, localMax);
+		debounce(() => onchange(localMin, localMax), 300);
 	}
 
 	function handleMaxChange(event: Event): void {
 		const target = event.target as HTMLInputElement;
 		localMax = Number(target.value);
-		onchange(localMin, localMax);
+		debounce(() => onchange(localMin, localMax), 300);
 	}
 </script>
 

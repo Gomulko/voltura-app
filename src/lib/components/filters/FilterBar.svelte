@@ -3,47 +3,38 @@
 	import TypeFilter from './TypeFilter.svelte';
 	import DriveFilter from './DriveFilter.svelte';
 	import PriceRangeFilter from './PriceRangeFilter.svelte';
-	import { Button } from '$lib/components/ui';
 	import type { BodyType, DriveType } from '$lib/types';
 
 	let filters = $derived(filtersStore.state);
 
-	let localType = $state<BodyType | null>(filters.type);
-	let localDrive = $state<DriveType | null>(filters.drive);
-	let localMinPrice = $state(filters.minPrice);
-	let localMaxPrice = $state(filters.maxPrice);
+	function handleTypeChange(value: BodyType | null): void {
+		filtersStore.setType(value);
+	}
 
-	function applyFilters(): void {
-		filtersStore.setType(localType);
-		filtersStore.setDrive(localDrive);
-		filtersStore.setPriceRange(localMinPrice, localMaxPrice);
+	function handleDriveChange(value: DriveType | null): void {
+		filtersStore.setDrive(value);
+	}
+
+	function handlePriceChange(min: number, max: number): void {
+		filtersStore.setPriceRange(min, max);
 	}
 </script>
 
 <section class="container my-4">
 	<div class="card card-body bg-light">
 		<div class="row g-3 align-items-end">
-			<div class="col-md-3">
-				<TypeFilter value={localType} onchange={(value: BodyType | null) => (localType = value)} />
+			<div class="col-md-4">
+				<TypeFilter value={filters.type} onchange={handleTypeChange} />
 			</div>
-			<div class="col-md-3">
-				<DriveFilter
-					value={localDrive}
-					onchange={(value: DriveType | null) => (localDrive = value)}
-				/>
+			<div class="col-md-4">
+				<DriveFilter value={filters.drive} onchange={handleDriveChange} />
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-4">
 				<PriceRangeFilter
-					min={localMinPrice}
-					max={localMaxPrice}
-					onchange={(min: number, max: number) => {
-						localMinPrice = min;
-						localMaxPrice = max;
-					}}
+					min={filters.minPrice}
+					max={filters.maxPrice}
+					onchange={handlePriceChange}
 				/>
-			</div>
-			<div class="col-md-3">
-				<Button variant="success" class="w-100" onclick={applyFilters}>Filtruj</Button>
 			</div>
 		</div>
 	</div>
